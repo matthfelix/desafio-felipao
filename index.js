@@ -1,27 +1,25 @@
 //variáveis
 
 let nomeHeroi = "Hollow Knight"
-let xp = 5357
-let nivel
+let vitoria = 77
+let derrota = 3
+let saldo = (vitoria - derrota) 
 
 //condições
 
-if(xp <= 1000) {
+if(saldo <= 10) {
     nivel = "Ferro"
-}else if(xp >= 1001 && xp <= 2000) {
+}else if(saldo >= 11 && saldo <= 20) {
 	nivel = "Bronze"
-}else if(xp >= 2001 && xp <= 5000) {
+}else if(saldo >= 21 && saldo <= 50) {
 	nivel = "Prata"
-}else if(xp >= 5001 && xp <= 7000) {
+}else if(saldo >= 51 && saldo <= 80) {
 	nivel = "Ouro"
-}else if(xp >= 7001 && xp <= 8000) {
-	nivel = "Platina"
-}else if(xp >= 8001 && xp <= 9000) {
+}else if(saldo >= 81 && saldo <= 90) {
 	nivel = "Diamante"
-}else if(xp >= 9001 && xp <= 10.000) {
+}else if(saldo >= 91 && saldo <= 100) {
+	nivel = "Lendário"
+}else if(saldo >= 101) {
 	nivel = "Imortal"
-}else if(xp >= 10001){
-	nivel = "Radiante"
 }
-
-console.log("O herói " + nomeHeroi + ", está no nível " + nivel + "!")
+console.log("O herói " + nomeHeroi + ", tem o saldo de " + saldo + " e está no nível " + nivel + "!")
